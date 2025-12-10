@@ -27,7 +27,6 @@ spec:
       containers:
       - name: mongodb
         image: kiransaiveerandi/mongodb:v1
-
         readinessProbe:
           tcpSocket:
             port: 27017
