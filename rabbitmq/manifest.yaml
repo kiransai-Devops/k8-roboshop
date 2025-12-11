@@ -60,4 +60,12 @@ spec:
       targetPort: 5672 # container port
 
 
+
+
+
+
+
+
+
+
       
