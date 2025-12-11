@@ -36,12 +36,12 @@ spec:
         readinessProbe:
           tcpSocket:
             port: 5672
-          initialDelaySeconds: 10
+          initialDelaySeconds: 15
           periodSeconds: 10
         livenessProbe:
           tcpSocket:
             port: 5672
-          initialDelaySeconds: 5
+          initialDelaySeconds: 20
           periodSeconds: 5
 ---
 apiVersion: v1
@@ -58,4 +58,3 @@ spec:
     - protocol: TCP
       port: 5672 # service port
       targetPort: 5672 # container port
- 
